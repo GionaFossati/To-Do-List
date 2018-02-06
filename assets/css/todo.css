@@ -1,0 +1,101 @@
+:root {
+  --bg-color: linear-gradient(to right, #a43931, #1d4350);
+  --bg-color-inverse: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background:  var(--bg-color);
+
+}
+
+#container {
+    width: 360px;
+    margin: 10% auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    background: var(--bg-color-inverse);
+    color: white;
+    padding: 10px 20px;
+    margin: 0 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h1 div {
+   display: inline-block;
+    float: right;
+    line-height: 24px;
+    margin: 0 0;
+    width: 15%;
+    text-align: center;
+    height: 100%;
+}
+
+.done {
+    color: #e74c3c;
+    text-decoration: line-through;
+}
+
+input {
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background:  rgba(255, 255, 255, 0); 
+    padding: 13px 13px;
+    line-height: 18px;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box; 
+    color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+    background: var(--bg-color);
+    border: 1px solid black;
+    outline: none;
+}
+
+ul {
+    background: var(--bg-color-inverse);
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+li {
+    margin: 0 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px var(--bg-color);
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+li:hover span{
+    width: 40px;
+    opacity: 1;
+}
+
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    width: 0;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    color:white;
+}
